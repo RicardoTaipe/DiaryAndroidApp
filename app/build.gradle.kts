@@ -5,7 +5,7 @@ plugins {
 //    alias(libs.plugins.google.services)
 //    alias(libs.plugins.google.ksp)
 //    alias(libs.plugins.jetbrains.kotlin.compose)
-    id("io.realm.kotlin")
+    //id("io.realm.kotlin")
 }
 
 android {
@@ -79,7 +79,7 @@ dependencies {
 //    implementation(libs.androidx.lifecycle.runtime.compose)
 //
 //    // Splash API
-//    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.core.splashscreen)
 //
 //    // Mongo DB Realm
 //    implementation(libs.kotlinx.coroutines.core)
