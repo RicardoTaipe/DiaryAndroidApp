@@ -1,9 +1,10 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-//    alias(libs.plugins.dagger.hilt)
-//    alias(libs.plugins.google.services)
-//    alias(libs.plugins.google.ksp)
+    alias(libs.plugins.dagger.hilt)
+    alias(libs.plugins.google.services)
+    alias(libs.plugins.google.ksp)
+    alias(libs.plugins.compose.compiler)
 //    alias(libs.plugins.jetbrains.kotlin.compose)
     //id("io.realm.kotlin")
 }
@@ -44,9 +45,6 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -80,18 +78,19 @@ dependencies {
 //
 //    // Splash API
     implementation(libs.androidx.core.splashscreen)
+    implementation(libs.firebase.firestore)
 //
 //    // Mongo DB Realm
 //    implementation(libs.kotlinx.coroutines.core)
 //    implementation(libs.library.sync)
 //
 //    // Dagger Hilt
-//    implementation(libs.hilt.android)
-//    ksp(libs.hilt.compiler)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 //    implementation(libs.androidx.hilt.navigation.compose)
 //
 //    // Coil
-//    implementation(libs.coil.compose)
+    implementation(libs.coil.compose)
 //
 //    // Date-Time Picker
 //    implementation(libs.core)
