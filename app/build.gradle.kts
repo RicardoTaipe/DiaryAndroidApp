@@ -11,11 +11,12 @@ plugins {
 
 android {
     namespace = "com.example.diaryapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.diaryapp"
         minSdk = 23
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -62,8 +63,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-//    // Compose Navigation
-//    implementation(libs.androidx.navigation.compose)
+    // Compose Navigation
+    implementation(libs.androidx.navigation.compose)
 //    // Firebase
 //    implementation(libs.firebase.auth.ktx)
 //    implementation(libs.firebase.storage.ktx)
