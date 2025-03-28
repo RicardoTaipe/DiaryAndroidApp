@@ -2,4 +2,7 @@
     <string name="app_name">DiaryApp</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="google_logo_content_description">Google Logo</string>
+    <string name="auth_title">Welcome back</string>
+    <string name="auth_subtitle">Please sign in to continue</string>
 </resources>
